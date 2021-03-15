@@ -7,4 +7,10 @@ public class RunningCoach implements Coach {
 		return "Called from RunningCoach";
 	}
 
+	@Override
+	public String getWeather() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

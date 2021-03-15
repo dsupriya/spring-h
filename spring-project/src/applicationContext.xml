@@ -4,8 +4,11 @@
    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   <bean id = "Weather" class = "com.rough.Weather">
+   </bean>
 
    <bean id = "BaseballCoach" class = "com.rough.BaseballCoach">
+   <constructor-arg ref = "Weather" />
    </bean>
     <bean id = "RunningCoach" class = "com.rough.RunningCoach">
    </bean>

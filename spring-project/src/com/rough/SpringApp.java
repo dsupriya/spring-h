@@ -10,9 +10,10 @@ public class SpringApp {
 		Coach test = context.getBean("BaseballCoach",Coach.class);
 		String s = (test.getWorkout());
 		System.out.println (s);
-		test = context.getBean("RunningCoach",Coach.class);
-		s = (test.getWorkout());
-		System.out.println (s);
+		System.out.println(test.getWeather());
+		//test = context.getBean("RunningCoach",Coach.class);
+		//s = (test.getWorkout());
+		//System.out.println (s);
 		context.close();
 		
 
