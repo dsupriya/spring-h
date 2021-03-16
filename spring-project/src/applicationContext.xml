@@ -12,5 +12,9 @@
    </bean>
     <bean id = "RunningCoach" class = "com.rough.RunningCoach">
    </bean>
+   <bean id ="CricketCoach" class = "com.rough.CricketCoach">
+   <property name="Weather" ref = "Weather"></property>
+   
+   </bean>
 
 </beans>

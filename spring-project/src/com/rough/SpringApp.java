@@ -7,13 +7,17 @@ public class SpringApp {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Coach test = context.getBean("BaseballCoach",Coach.class);
+		/*Coach test = context.getBean("BaseballCoach",Coach.class);
 		String s = (test.getWorkout());
 		System.out.println (s);
 		System.out.println(test.getWeather());
-		//test = context.getBean("RunningCoach",Coach.class);
+		//test = context.getBean("RunningCoach",Coach.class);*/
 		//s = (test.getWorkout());
 		//System.out.println (s);
+		
+		//Setter dependency demo
+		Coach coach = context.getBean("CricketCoach", Coach.class);
+		System.out.println(coach.getWeather());
 		context.close();
 		
 
