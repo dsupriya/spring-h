@@ -12,6 +12,16 @@ public class BaseballCoach implements Coach {
 	public String getWorkout() {
 		return ("called from BaseballCoach");
 	}
+	public void init()
+	{
+		System.out.println("BaseballCoach object is initiating");
+		
+	}
+	public void destroy()
+	{
+		System.out.println("BaseballCoach object is destorying");
+		
+	}
 
 	@Override
 	public String getWeather() {

@@ -12,8 +12,10 @@
    <bean id = "Weather" class = "com.rough.Weather">
    </bean>
 
-   <bean id = "BaseballCoach" class = "com.rough.BaseballCoach">
-   <constructor-arg ref = "Weather" />
+   <bean id = "BaseballCoach" class = "com.rough.BaseballCoach"  init-method ="init" 
+   destroy-method="destroy">
+   <constructor-arg ref = "Weather"
+  />
    </bean>
     <bean id = "RunningCoach" class = "com.rough.RunningCoach">
    </bean>
