@@ -3,6 +3,7 @@ package com.rough;
 public class BaseballCoach implements Coach {
 	private Weather weather;
 	
+	
 	BaseballCoach(Weather weather)
 	{
 		this.weather = weather;

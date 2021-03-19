@@ -16,8 +16,11 @@ public class SpringApp {
 		//System.out.println (s);
 		
 		//Setter dependency demo
-		Coach coach = context.getBean("CricketCoach", Coach.class);
+		CricketCoach coach = context.getBean("CricketCoach", CricketCoach.class);
 		System.out.println(coach.getWeather());
+		System.out.println(coach.getEmail());
+		System.out.println(coach.getName());
+		
 		context.close();
 		
 
