@@ -5,10 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach {
-	Weather weatherService;
+	@Autowired
+	private Weather weatherService;
 	
 	
-	TennisCoach(Weather weatherService){
+	TennisCoach(){
+		System.out.println("Inside No arg constructor");
 	
 	}
 		@Override
@@ -19,10 +21,6 @@ public class TennisCoach implements Coach {
 	public String getWeather() {
 			return  weatherService.getWeather();
 	}
-	@Autowired
-	public void setweatherService(Weather weatherService) {
-		this.weatherService = weatherService;
-		
-	}
+	
 
 }
