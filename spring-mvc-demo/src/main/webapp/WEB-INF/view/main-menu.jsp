@@ -6,5 +6,6 @@
 <h3>
 <a href ="showForm">go to form</a>
 </h3>
+<hr>
 </body>
 </html>
