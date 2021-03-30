@@ -7,18 +7,23 @@ import org.springframework.stereotype.Component;
 
 //Application Context
 @Component
-@Scope("prototype")
+
 public class TennisCoach implements Coach {
 	@Autowired
-	@Qualifier("indiaWeather")
+	@Qualifier("japanWeather")
 	private Weather weatherService;
+	
+	
+	
 	
 	
 	TennisCoach(){
 		System.out.println("Inside No arg constructor here");
 	
 	}
-		@Override
+	
+	
+	@Override
 	public String getDailyWorkout() {
 		return "Do back-hand pratice for 30 min";
 	}
