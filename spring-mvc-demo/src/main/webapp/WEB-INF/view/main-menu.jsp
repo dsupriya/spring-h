@@ -6,6 +6,10 @@
 <h3>
 <a href ="showForm">go to form</a>
 </h3>
+<br><br>
+<h3>
+<a href ="Student/ShowForm">go to form</a>
+</h3>
 <hr>
 </body>
 </html>
