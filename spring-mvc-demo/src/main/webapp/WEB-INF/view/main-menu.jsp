@@ -4,12 +4,13 @@
 <h2> Spring MVC demo Home Page</h2>
 <hr>
 <h3>
-<a href ="showForm">go to form</a>
+<a href ="showForm">HelloWorld Form</a>
 </h3>
-<br><br>
+<br>
 <h3>
-<a href ="Student/ShowForm">go to form</a>
+<a href ="Student/ShowForm">Student Form</a>
 </h3>
+<br>
 <hr>
 </body>
 </html>
