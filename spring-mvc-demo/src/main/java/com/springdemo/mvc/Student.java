@@ -2,7 +2,7 @@ package com.springdemo.mvc;
 
 public class Student {
 	
-	public String firstName, lastName;
+	public String firstName, lastName, country;
 	
 	Student(){}
 
@@ -12,6 +12,14 @@ public class Student {
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
 	}
 
 	public String getLastName() {
