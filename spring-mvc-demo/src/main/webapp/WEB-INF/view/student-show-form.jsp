@@ -23,6 +23,12 @@ Student Info Form
 			Scala <form:radiobutton path="favLanguage" value = "Scala"/>
 
 		<br><br>
+		
+		OS :
+			Linux <form:checkbox path="OS" value = "Linux"/>
+			MAC <form:checkbox path="OS" value = "MAC"/>
+			Windows <form:checkbox path="OS" value = "Windows"/>
+		<br><br>
 		<input type = "submit" value = "submit"/>
 	</form:form>
 </body>
