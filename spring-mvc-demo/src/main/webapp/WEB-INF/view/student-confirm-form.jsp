@@ -4,15 +4,16 @@
 Student Confirmation Form
 </title>
 </head>
-<body>
-<h1>
+	<body>
+		<h1>
+			Student is confirmed : ${student.firstName}  ${student.lastName}  
+		</h1>
+		<h2>
+			Country : ${student.country}
+		</h2>
+		<h2>
+			Fav Lang : ${student.favLanguage}
+		</h2>
 
-Student is confirmed : ${student.firstName}  ${student.lastName}  
-</h1>
-
-<h2>
-Country : ${student.country}
-</h2>
-
-</body>
+	</body>
 </html>
